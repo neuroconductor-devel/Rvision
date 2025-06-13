@@ -3,33 +3,28 @@ Type: Package
 Title: Computer Vision Library for R
 Version: 0.8.1
 Date: 2024-08-01
-Authors@R: c(
-    person("Simon", "Garnier", email = "garnier@njit.edu", role = c("aut", "cre"),
-      comment = c(ORCID = "0000-0002-3886-3974")),
-    person("Muschelli", "John", email = "muschellij2@gmail.com", role = c("ctb", "cph"))
-  )
+Authors@R: c( person("Simon", "Garnier", email = "garnier@njit.edu",
+        role = c("aut", "cre"), comment = c(ORCID =
+        "0000-0002-3886-3974")), person("Muschelli", "John", email =
+        "muschellij2@gmail.com", role = c("ctb", "cph")) )
 Maintainer: Simon Garnier <garnier@njit.edu>
-Description: An OpenCV-based computer vision library providing methods to read 
-    and manipulate video and image files, as well as camera streams.
+Description: An OpenCV-based computer vision library providing methods
+        to read and manipulate video and image files, as well as camera
+        streams.
 License: GPL-3
 LazyData: TRUE
 NeedsCompilation: yes
-Depends: 
-    R (>= 4.0.0)
-Imports:
-    Rcpp (>= 1.0.1),
-    RcppArmadillo,
-    ROpenCVLite (>= 4.90.2),
-    methods,
-    pbapply,
-    stats,
-    graphics
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.1), RcppArmadillo, ROpenCVLite (>= 4.90.2),
+        methods, pbapply, stats, graphics
 LinkingTo: Rcpp, RcppArmadillo
-RcppModules: class_Image, class_Capture, class_VideoWriter, 
-    methods_Arithmetic, methods_Statistics, methods_Comparisons, methods_Logical, 
-    methods_OpticalFlow, methods_Blob, methods_Morphology, methods_Filters, 
-    methods_Display, methods_Draw, methods_Geometry, methods_Shape, methods_Transform,
-    methods_Feature, methods_Autothresh, methods_Ximgproc, methods_Calib3d
+RcppModules: class_Image, class_Capture, class_VideoWriter,
+        methods_Arithmetic, methods_Statistics, methods_Comparisons,
+        methods_Logical, methods_OpticalFlow, methods_Blob,
+        methods_Morphology, methods_Filters, methods_Display,
+        methods_Draw, methods_Geometry, methods_Shape,
+        methods_Transform, methods_Feature, methods_Autothresh,
+        methods_Ximgproc, methods_Calib3d
 RoxygenNote: 7.3.2
 Biarch: false
 StagedInstall: false
@@ -37,8 +32,13 @@ Encoding: UTF-8
 Suggests: 
     covr,
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat
 VignetteBuilder: knitr
 URL: https://swarm-lab.github.io/Rvision/,
-    https://github.com/swarm-lab/Rvision
+        https://github.com/swarm-lab/Rvision
 BugReports: https://github.com/swarm-lab/Rvision/issues
+Repository: Neuroconductor-Devel
+Remotes: 
+    neuroconductor-devel/ROpenCVLite@027d0616662d4d4ec332a6af397f34d123c67a36
+biocViews: 
