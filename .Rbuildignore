@@ -18,3 +18,7 @@ ci_script
 ^doc$
 ^Meta$
 .vscode
+^DESCRIPTION\.bak$
+^autoci\.yml$
+^autoci_pkgdown\.yml$
+^tic\.R$
